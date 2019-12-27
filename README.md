@@ -17,3 +17,9 @@ make
 ## TODO
 
 - [x] Check tables in db
+- [ ] Add documentation
+- [ ] Add tests
+
+## References
+
+1 - https://stackoverflow.com/questions/305378/list-of-tables-db-schema-dump-etc-using-the-python-sqlite3-api
