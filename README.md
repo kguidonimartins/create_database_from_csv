@@ -16,4 +16,4 @@ make
 
 ## TODO
 
-- [ ] Check tables in db
+- [x] Check tables in db
