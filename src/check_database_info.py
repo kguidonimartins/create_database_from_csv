@@ -34,3 +34,14 @@ def read_table_from_database(table_name, database_name):
     query_table = f"SELECT * from {table_name}"
     table = pd.read_sql_query(query_table, db)
     return table
+
+
+def check_table_structure(table_name, database_name):
+    db = sqlite3.connect(database_name)
+    cursor = db.cursor()
+    query = f"SELECT sql FROM sqlite_master WHERE name = '{table_name}'"
+    cursor.execute(query)
+    table_structure = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return table_structure
