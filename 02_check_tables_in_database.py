@@ -15,4 +15,6 @@ table_list = check_table_names(database_name)
 
 read_table_from_database(table_list[0], database_name)
 
+print(check_table_structure(table_list[0], database_name))
+
 extract_tables_to_csv(database_name, 'data/output')
