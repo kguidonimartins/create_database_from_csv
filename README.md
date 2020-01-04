@@ -17,7 +17,7 @@ make
 ## TODO
 
 - [x] Check tables in db
-- [ ] Add documentation
+- [x] Add documentation
 - [ ] Add tests
 
 ## References
