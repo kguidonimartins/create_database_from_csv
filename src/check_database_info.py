@@ -21,7 +21,7 @@ def extract_tables_to_csv(database_name, dir_to_store):
     tables = cursor.fetchall()
     for table_name in tables:
         table_name = table_name[0]
-        query_table = f"SELECT * from {table_name}"
+        query_table = f"SELECT * from '{table_name}'"
         table = pd.read_sql_query(query_table, db)
         table_name_to_save = dir_to_store + '/' + table_name + '.csv'
         table.to_csv(table_name_to_save, index_label='index')
@@ -31,7 +31,7 @@ def extract_tables_to_csv(database_name, dir_to_store):
 
 def read_table_from_database(table_name, database_name):
     db = sqlite3.connect(database_name)
-    query_table = f"SELECT * from {table_name}"
+    query_table = f"SELECT * from '{table_name}'"
     table = pd.read_sql_query(query_table, db)
     return table
 
