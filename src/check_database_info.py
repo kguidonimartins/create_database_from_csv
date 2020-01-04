@@ -44,4 +44,5 @@ def check_table_structure(table_name, database_name):
     table_structure = cursor.fetchall()
     cursor.close()
     db.close()
-    return table_structure
+    format_table_structure = list(table_structure[0])[0].split('\n\t')
+    return format_table_structure
