@@ -1,6 +1,3 @@
-import sqlite3
-
-import pandas as pd
 
 from src.check_database_info import (
     check_table_names,

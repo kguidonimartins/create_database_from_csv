@@ -5,10 +5,10 @@ import pandas as pd
 
 def check_table_names(database_path):
     """Check table names in a database.
-    
+
     Args:
         database_path (str): Path to database
-    
+
     Returns:
         list: List with table names inside the database
     """
@@ -24,7 +24,7 @@ def check_table_names(database_path):
 
 def extract_tables_to_csv(database_path, dir_to_store):
     """Extract table from a database and write in a csv file.
-    
+
     Args:
         database_path (str): Path to database
         dir_to_store (str): Path to write the csv file
@@ -46,11 +46,11 @@ def extract_tables_to_csv(database_path, dir_to_store):
 
 def read_table_from_database(table_name, database_path):
     """Read table from a database as a pandas dataframe.
-    
+
     Args:
         table_name (str): Table name
         database_path (str): Path to database
-    
+
     Returns:
         dataframe: pandas dataframe
     """
@@ -62,11 +62,11 @@ def read_table_from_database(table_name, database_path):
 
 def check_table_structure(table_name, database_path):
     """Check column type of a table inside a database.
-    
+
     Args:
         table_name (str): Table name
         database_path (str): Path to database
-    
+
     Returns:
         list: List with column types of a table
     """
