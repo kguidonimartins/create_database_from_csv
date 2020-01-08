@@ -1,6 +1,6 @@
 # create_database_from_csv
 
-A small script to create a database from multiple (or a "huge") csv files in python.
+Functions for creating a database from CSV files using python.
 
 ## Reproducibility
 
