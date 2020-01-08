@@ -21,6 +21,7 @@ def check_table_names(database_path):
     tables = cursor.fetchall()
     table_names = [table[0] for table in tables]
     cursor.close()
+    database.close()
     return table_names
 
 
@@ -59,6 +60,7 @@ def read_table_from_database(table_name, database_path):
     database = sqlite3.connect(database_path)
     query_table = f"SELECT * from '{table_name}'"
     table = pd.read_sql_query(query_table, database)
+    database.close()
     return table
 
 
