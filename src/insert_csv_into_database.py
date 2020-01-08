@@ -1,3 +1,5 @@
+"""Inserting csv files into a database."""
+
 from pathlib import Path
 
 import pandas as pd
