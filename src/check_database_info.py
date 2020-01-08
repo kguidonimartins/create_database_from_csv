@@ -1,5 +1,4 @@
-"""Checking all database info.
-"""
+"""Checking all database info."""
 
 import sqlite3
 
