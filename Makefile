@@ -11,7 +11,10 @@ create_db:
 check_db:
 	python 02_check_tables_in_database.py
 
-.PHONY: clean
+.PHONY: clean r-workaround
 clean:
 	rm -rf data
 	rm *.db
+
+r-workaround: create_df create_db
+	Rscript 02_check_tables_in_database.R

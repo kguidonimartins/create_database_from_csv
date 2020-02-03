@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+TestInsert	tests/xxxxxxxxxxxtest_insert_csv_into_database.py	/^class TestInsert(unittest.TestCase):$/;"	c
+check_table_names	src/check_database_info.py	/^def check_table_names(database_path):$/;"	f
+check_table_structure	src/check_database_info.py	/^def check_table_structure(table_name, database_path):$/;"	f
+database_name	02_check_tables_in_database.py	/^database_name = "test_small_db.db"$/;"	v
+df	00_create_random_dataframe.py	/^    df = pd.DataFrame($/;"	v
+df	tests/test_insert_csv_into_database.py	/^    df = pd.DataFrame($/;"	v
+extract_tables_to_csv	src/check_database_info.py	/^def extract_tables_to_csv(database_path, dir_to_store):$/;"	f
+huge_csv	00_create_random_dataframe.py	/^huge_csv = pd.DataFrame($/;"	v
+huge_csv	tests/test_insert_csv_into_database.py	/^huge_csv = pd.DataFrame($/;"	v
+huge_csv	tests/xxxxxxxxxxxtest_insert_csv_into_database.py	/^    huge_csv = pd.DataFrame($/;"	v	class:TestInsert
+huge_db	01_create_database_from_csv.py	/^huge_db = create_engine("sqlite:\/\/\/.\/test_huge_db.db")$/;"	v
+insert_csv_in_db	src/insert_csv_into_database.py	/^def insert_csv_in_db(csv_path, chunk_size, database_connection):$/;"	f
+path	tests/test_insert_csv_into_database.py	/^path = "data_test\/"$/;"	v
+read_table_from_database	src/check_database_info.py	/^def read_table_from_database(table_name, database_path):$/;"	f
+setUp	tests/xxxxxxxxxxxtest_insert_csv_into_database.py	/^    def setUp(self):$/;"	m	class:TestInsert
+small_db	01_create_database_from_csv.py	/^small_db = create_engine("sqlite:\/\/\/.\/test_small_db.db")$/;"	v
+small_files	01_create_database_from_csv.py	/^small_files = [f for f in glob.glob("data\/input\/small_csv*.csv")]$/;"	v
+table_list	02_check_tables_in_database.py	/^table_list = check_table_names(database_name)$/;"	v
+test_if_csv_exists	tests/test_insert_csv_into_database.py	/^def test_if_csv_exists(path):$/;"	f
+test_if_csv_exists	tests/xxxxxxxxxxxtest_insert_csv_into_database.py	/^    def test_if_csv_exists(self):$/;"	m	class:TestInsert
