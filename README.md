@@ -19,6 +19,7 @@ make
 - [x] Check tables in db
 - [x] Add documentation
 - [ ] Add tests
+- [ ] Add workflow with sqlite3 CLI
 
 ## References
 
