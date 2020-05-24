@@ -1,7 +1,5 @@
 import glob
-
 from sqlalchemy import create_engine
-
 from src.insert_csv_into_database import insert_csv_in_db
 
 small_files = [f for f in glob.glob("data/input/small_csv*.csv")]

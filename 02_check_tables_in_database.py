@@ -1,4 +1,3 @@
-
 from src.check_database_info import (
     check_table_names,
     check_table_structure,
