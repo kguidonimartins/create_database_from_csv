@@ -19,3 +19,7 @@ def insert_csv_in_db(csv_path, chunk_size, database_connection):
         chunk.to_sql(
             name=name_table, if_exists="append", con=database_connection
         )
+
+
+if __name__ == 'main':
+    main()

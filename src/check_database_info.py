@@ -83,3 +83,7 @@ def check_table_structure(table_name, database_path):
     database.close()
     format_table_structure = list(table_structure[0])[0].split("\n\t")
     return format_table_structure
+
+
+if __name__ == 'main':
+    main()
